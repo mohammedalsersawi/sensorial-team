@@ -26,6 +26,14 @@
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
+                        <a class="dropdown-item text-primary" href="#"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit()"
+                    ><i
+                            class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
+                        <span>Logout</span></a>
+                        <form action="{{ route('logout') }}" method="POST" id="logout-form">
+                            @csrf
+                         </form>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 

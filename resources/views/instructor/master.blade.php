@@ -49,7 +49,7 @@
                                 document.write(new Date().getFullYear())
                             </script> © Agroxa <span class="d-none d-sm-inline-block">- Crafted with <i
                                     class="mdi mdi-heart text-primary"></i> by
-                                Hamo.</span>
+                                Hamo</span>
                         </div>
 
                     </div>
@@ -64,21 +64,21 @@
 
 
     <!-- JAVASCRIPT -->
-    <script src="adminassets/libs/jquery/jquery.min.js"></script>
-    <script src="adminassets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="adminassets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="adminassets/libs/simplebar/simplebar.min.js"></script>
-    <script src="adminassets/libs/node-waves/waves.min.js"></script>
-    <script src="adminassets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="{{ asset('adminassets/libs/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('adminassets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('adminassets/libs/metismenu/metisMenu.min.js') }}"></script>
+    <script src="{{ asset('adminassets/libs/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('adminassets/libs/node-waves/waves.min.js') }}"></script>
+    <script src="{{ asset('adminassets/libs/jquery-sparkline/jquery.sparkline.min.js') }}"></script>
 
     <!-- Responsive Table js -->
-    <script src="adminassets/libs/admin-resources/rwd-table/rwd-table.min.js"></script>
+    <script src="{{ asset('adminassets/libs/admin-resources/rwd-table/rwd-table.min.js') }}"></script>
 
     <!-- Init js -->
-    <script src="adminassets/js/pages/table-responsive.init.js"></script>
+    <script src="{{ asset('adminassets/js/pages/table-responsive.init.js') }}"></script>
 
     <!-- App js -->
-    <script src="adminassets/js/app.js"></script>
+    <script src="{{ asset('adminassets/js/app.js') }}"></script>
 
 </body>
 

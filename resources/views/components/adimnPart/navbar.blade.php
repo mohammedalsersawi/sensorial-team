@@ -213,13 +213,17 @@
                     <a class="dropdown-item" href="#"><i
                             class="mdi mdi-lock-open-outline font-size-16 text-muted align-middle me-2"></i>
                         <span>Lock screen</span></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-primary" href="#"><i
-                            class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
-                        <span>Logout</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-primary" href="#"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit()"
+                        ><i
+                                class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
+                            <span>Logout</span></a>
+                            <form action="{{ route('logout') }}" method="POST" id="logout-form">
+                                @csrf
+                             </form>
+                    </div>
                 </div>
-            </div>
-
             <!-- Setting -->
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">

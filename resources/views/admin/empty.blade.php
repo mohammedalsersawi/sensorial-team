@@ -24,6 +24,7 @@
                         <div class="state-graph">
                             <div id="header-chart-2"></div>
                             <div class="info">Item Sold 1230</div>
+
                         </div>
                     </div>
                 </div>
@@ -45,6 +46,8 @@
 
                             <br><br>
                             <div class="table-rep-plugin">
+
+                                <h1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
                                 <div class="table- mb-0" data-pattern="priority-columns">
                                     <table id="tech-companies-1" class="table table-striped">
                                         <thead>

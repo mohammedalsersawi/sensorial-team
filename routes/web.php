@@ -15,18 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('users.welcome');
-});
+})->middleware('auth:web');
 
 
-Route::prefix('admin')->group(function () {
+Route::middleware('auth:admin')->prefix('admin/dashboard')->group(function () {
     Route::get('/', function () {
         return view('admin.empty');
-    });
+    })->name('admin.dashboard');
 });
 
 
-Route::prefix('instructor')->group(function () {
+Route::middleware('auth:instructor')->prefix('instructor/dashboard')->group(function () {
     Route::get('/', function () {
         return view('instructor.empty');
-    });
+    })->name('instructor.dashboard');
 });
