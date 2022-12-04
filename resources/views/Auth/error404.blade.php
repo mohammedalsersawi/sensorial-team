@@ -37,7 +37,7 @@
                         <h1 class="text-dark">404!</h1>
                         <h4 class="">Sorry, page not found</h4><br>
 
-                        <a class="btn btn-info mb-5 waves-effect waves-light" href="index.html"><i class="mdi mdi-home"></i>
+                        <a class="btn btn-info mb-5 waves-effect waves-light" href=""><i class="mdi mdi-home"></i>
                             Back to Dashboard</a>
                     </div>
 
@@ -69,7 +69,7 @@
 
                 <div class="p-4">
                     <div class="mb-2">
-                        <img src="adminassets/images/layouts/layout-1.png" class="img-fluid img-thumbnail" alt="">
+                        <img src="{{ asset('adminassets/images/layouts/layout-1.png') }}" class="img-fluid img-thumbnail" alt="">
                     </div>
 
                     <div class="form-check form-switch mb-3">
@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="mb-2">
-                        <img src="adminassets/images/layouts/layout-2.png" class="img-fluid img-thumbnail" alt="">
+                        <img src="{{ asset('adminassets/images/layouts/layout-2.png') }}" class="img-fluid img-thumbnail" alt="">
                     </div>
 
                     <div class="form-check form-switch mb-3">
@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="mb-2">
-                        <img src="adminassets/images/layouts/layout-3.png" class="img-fluid img-thumbnail" alt="">
+                        <img src="{{ asset('adminassets/images/layouts/layout-3.png') }}" class="img-fluid img-thumbnail" alt="">
                     </div>
                     <div class="form-check form-switch mb-5">
                         <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch"

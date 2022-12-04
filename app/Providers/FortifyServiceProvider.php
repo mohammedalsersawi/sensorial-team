@@ -90,7 +90,7 @@ class FortifyServiceProvider extends ServiceProvider
             Fortify::loginView('Auth.login');
             Fortify::registerView('Auth.error404');
         }elseif (Config::get('fortify.guard') == 'instructor'){
-            Fortify::loginView('loginA');
+            Fortify::loginView('Auth.login');
             Fortify::registerView('Auth.error404');
         } else {
             Fortify::loginView('loginA');
