@@ -87,11 +87,11 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         if (Config::get('fortify.guard') == 'admin') {
-            Fortify::loginView('loginA');
-
+            Fortify::loginView('Auth.login');
+            Fortify::registerView('Auth.error404');
         }elseif (Config::get('fortify.guard') == 'instructor'){
             Fortify::loginView('loginA');
-
+            Fortify::registerView('Auth.error404');
         } else {
             Fortify::loginView('loginA');
         }

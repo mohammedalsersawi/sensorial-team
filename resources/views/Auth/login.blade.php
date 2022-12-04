@@ -20,7 +20,8 @@
             </div>
 
             <div class="p-3">
-                <h4 class="text-muted font-size-18 text-center">AAAAAAAAAAAAAAAAAAAAAAAA !</h4>
+                <h4 class="text-muted font-size-18 text-center">Welcome Back !</h4>
+                <p class="text-muted text-center">Sign in to continue to Agroxa.</p>
                 @if ($errors->any())
                     <div class="font-medium text-red-600">
                     </div>
